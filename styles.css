@@ -37,7 +37,9 @@
   opacity: 0;
 }
 
-.asana-enhancer .ProjectSpreadsheetGridPageToolbar {
+.asana-enhancer .ProjectSpreadsheetGridPageToolbar,
+.asana-enhancer .TaskPrivacyBanner,
+.asana-enhancer .TaskAncestry {
   display: none;
 }
 
@@ -67,8 +69,54 @@
   grid-column: span 2;
 }
 
+.asana-enhancer .TaskPane-premiumFeaturesSection {
+  padding: 24px;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+}
+
+@media (prefers-color-scheme: dark) {
+  .asana-enhancer .TaskPane-premiumFeaturesSection {
+    background-color: #111;
+  }
+}
+.asana-enhancer.DesignTokenThemeSelectors-theme--darkMode .TaskPane-premiumFeaturesSection {
+  background-color: #111;
+}
+
+.asana-enhancer .LabeledRowStructure-labelContainer {
+  height: auto;
+}
+
+.asana-enhancer .TaskDescription.TaskDescription--alignedWithLabel {
+  margin: 0;
+  width: 100%;
+}
+
+.asana-enhancer .TaskStoryFeed-expandLink {
+  padding: 0;
+}
+
+.asana-enhancer .TaskPaneFields .TextEditor3 {
+  border: 1px solid #ddd;
+}
+
+@media (prefers-color-scheme: dark) {
+  .asana-enhancer .TaskPaneFields .TextEditor3 {
+    border-color: #444;
+  }
+}
+.asana-enhancer.DesignTokenThemeSelectors-theme--darkMode .TaskPaneFields .TextEditor3 {
+  border-color: #444;
+}
+
+.asana-enhancer .TextEditor3-borderBox {
+  border: none !important;
+}
+
 .asana-enhancer .TaskPaneFields .LabeledRowStructure,
-.asana-enhancer .TaskPaneFields-showMoreCustomFieldsContainer {
+.asana-enhancer .TaskPaneFields-showMoreCustomFieldsContainer,
+.asana-enhancer .TaskPaneFields-loadMoreContainer {
   display: none;
 }
 
