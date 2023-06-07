@@ -23,7 +23,12 @@
 
 /* Shh...too much noise! */
 
-.asana-enhancer.DesignTokenThemeSelectors-theme--systemDarkMode .Sidebar {
+@media (prefers-color-scheme: dark) {
+  .asana-enhancer .Sidebar {
+    background: black;
+  }
+}
+.asana-enhancer.DesignTokenThemeSelectors-theme--darkMode .Sidebar {
   background: black;
 }
 
@@ -102,7 +107,12 @@
   border-radius: 12px;
 }
 
-.asana-enhancer.DesignTokenThemeSelectors-theme--systemDarkMode .TaskStoryFeed .TaskStoryFeed-taskCreationStory {
+@media (prefers-color-scheme: dark) {
+  .asana-enhancer .TaskStoryFeed .TaskStoryFeed-taskCreationStory {
+    background-color: #404040;
+  }
+}
+.asana-enhancer.DesignTokenThemeSelectors-theme--darkMode .TaskStoryFeed .TaskStoryFeed-taskCreationStory {
   background-color: #404040;
 }
 
@@ -113,7 +123,12 @@
   border-radius: 12px;
 }
 
-.asana-enhancer.DesignTokenThemeSelectors-theme--systemDarkMode .TaskStoryFeed .FeedBlockStory .FeedBlockStory-content {
+@media (prefers-color-scheme: dark) {
+  .asana-enhancer .TaskStoryFeed .FeedBlockStory .FeedBlockStory-content {
+    background-color: #303030;
+  }
+}
+.asana-enhancer.DesignTokenThemeSelectors-theme--darkMode .TaskStoryFeed .FeedBlockStory .FeedBlockStory-content {
   background-color: #303030;
 }
 
@@ -123,7 +138,12 @@
   color: #434343;
 }
 
-.asana-enhancer.DesignTokenThemeSelectors-theme--systemDarkMode .TaskStoryFeed .FeedBlockStory .Typography {
+@media (prefers-color-scheme: dark) {
+  .asana-enhancer .TaskStoryFeed .FeedBlockStory .Typography {
+    color: #f1f1f1;
+  }
+}
+.asana-enhancer.DesignTokenThemeSelectors-theme--darkMode .TaskStoryFeed .FeedBlockStory .Typography {
   color: #f1f1f1;
 }
 
