@@ -38,8 +38,34 @@
 }
 
 .asana-enhancer .ProjectSpreadsheetGridPageToolbar,
-.asana-enhancer .TaskPrivacyBanner,
+.asana-enhancer .TaskPrivacyBanner {
+  display: none;
+}
+
+.asana-enhancer .TaskAncestry .Breadcrumb-divider {
+  display: none;
+}
+
 .asana-enhancer .TaskAncestry {
+  display: flex;
+  align-items: center;
+}
+
+.asana-enhancer .TaskAncestry * {
+  font-size: 12px !important;
+  margin: 0 !important;
+}
+
+.asana-enhancer .TaskAncestry a::after {
+  content: '>';
+  margin: 0 6px;
+}
+
+.asana-enhancer .TaskAncestry .TaskAncestryBreadcrumb-navigationLink.BaseLink::after {
+  display: none;
+}
+
+.asana-enhancer .BoardCardCustomPropertiesAndTags {
   display: none;
 }
 
